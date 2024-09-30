@@ -1,0 +1,496 @@
+body {
+    box-sizing: border-box;
+}
+
+.masthead {
+    background-image: url(../media/HomePage/MainHeaderIMG.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+.contenido-header-navegacion .navegacion {
+    background-color: pink;
+    padding-bottom: 0rem;
+    overflow: hidden;
+}
+
+.navbar-collapse .navbar-nav li a {
+    color: black;
+}
+
+.header-logo-enlace .logo-text {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .masthead {
+        min-height: 70vh;
+    }
+    .header-title {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    .masthead .navbar {
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+    }
+    .nav-item .nav-link:hover {
+        text-decoration: solid black underline 0.1rem;
+    }
+    .nav-item .enlace-red-social {
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .lista-nav {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .contenido-header-navegacion .navbar .menu-flex {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .logo-text {
+        display: none;
+    }
+    .navbar-toggler {
+        margin-right: 32%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        background-color: rgba(0, 0, 0,.1);
+    }
+    .logo-text {
+        color: white;
+    }
+    .navbar-nav li a {
+        color: white;
+    }
+    .nav-item .nav-link:hover {
+        color: white;
+        text-decoration: solid white underline 0.1rem;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: white !important; 
+    }
+    
+    .navbar-nav .nav-item .nav-link:focus {
+        color: white;
+    }
+}
+
+.header-logo {
+    max-width: 10vh;
+}
+
+.logo-text {
+    font-weight: bold;
+}
+
+.lista-nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-item .activo {
+    font-weight: bold;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 5% !important; 
+    left: 0;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+@keyframes cambiar-color-seleccion-menu-colapsable {
+    from {color: grey;}
+    to {color:black;}
+}
+
+.dropdown-menu li .dropdown-item {
+    color: grey;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    animation-name: cambiar-color-seleccion-menu-colapsable;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.separacion-menu {
+    color: black;
+}
+
+.enlace-red-social {
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* Nella's Cake Story */
+
+.nellas-cake-story-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.nellas-cake-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nellas-cake-story-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title-story-container {
+    text-shadow: 1px 0px 4px rgba(0,0,0,0.5);
+}
+
+.story-first-image {
+    min-width: 325px;
+    min-height: 200px;
+    width: 35vw;
+    height: 20vw;
+    margin-right: 0.3rem;
+}
+
+.nellas-cake-story-title {
+    margin-bottom: 0.3rem;
+}
+
+.nellas-cake-story-parragraph {
+    max-width: 30vw;
+    margin-bottom: 0rem;
+}
+
+.nellas-cake-story .title-story-container div {
+    text-shadow: 2px 3px 8px rgba(0,0,0,0.44);
+    margin-bottom: 1.3rem;
+}
+
+@media (max-width:767.9px) {
+    .nellas-cake-story-main {
+        margin-top: 2.5rem;
+    }
+
+    .title-story-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0.4rem;
+    }
+    .story-title-second-part {
+        margin-left: 1.5vw;
+    }
+    .nellas-cake-story {
+        margin-bottom: 1.5rem;
+    }
+    .nellas-cake-story-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .story-first-image {
+        width: 95%;
+        height: 50vw;
+        overflow: hidden;
+        margin-bottom: 1.7rem;
+    }
+    .nellas-cake-story-parragraph {
+        max-width: 90vw;
+    }
+}
+
+/* Nella's Cake Story 2nd Section */
+
+.nellas-cake-story-second-section {
+    margin-bottom: 4rem;
+}
+
+.nellas-cake-story-main .story-second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    width: 100%;
+    position: relative;
+    background-color: aqua;
+    min-height: 70vh;
+}
+
+.story-second-section .second-section-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    width: 50%;
+}
+
+.second-section-img-container .second-section-img {
+    max-width: 300px;
+    max-height: 400px;
+    min-width: 250px;
+    min-height: 250px;
+    width: 25vw;
+    height: 45vh;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.story-second-section .texto-second-section-image {
+    font-weight: bold;
+    max-width: 50%;
+    width: 50%;
+}
+
+.primer-parrafo-second-section {
+    max-width: 500px;
+    max-height: 600px;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+}
+
+@media (max-width:767.9px) {
+    .story-second-section .second-section-img-container {
+        justify-content: start;
+        padding-left: 2rem !important; 
+    }
+    .nellas-cake-story-main .story-second-section {
+        min-height: 80vh;
+    }
+    .story-second-section .texto-second-section-image {
+        max-width: 500px;
+        max-height: 600px;
+        padding-right: 2rem !important; 
+    }
+}
+
+@media (max-width: 560px) {
+    .story-second-section .second-section-img-container {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .story-second-section .texto-second-section-image {
+        max-width: 500px;
+        max-height: 600px;
+    }
+    .nellas-cake-story-main .story-second-section {
+        flex-direction: column-reverse;
+        margin-top: 8vh;
+    }
+    .story-second-section .texto-second-section-image {
+        font-weight: bold;
+        max-width: 90%;
+        width: 90%;
+        padding-left: 0rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        padding-right: 0rem !important; 
+    }
+    .nellas-cake-story-main .story-second-section {
+        min-height: 100vh;
+    }
+    .primer-parrafo-second-section {
+        padding-right: 0rem;
+    }
+}
+
+/* Onda */
+
+.nellas-cake-story-main .nellas-cake-story-container div {
+    padding: 0rem;
+}
+
+.nellas-cake-story-container .story-second-section .custom-shape-divider-top-1691930882 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.nellas-cake-story-container .story-second-section .custom-shape-divider-top-1691930882 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 78px;
+    transform: rotateY(180deg);
+}
+
+.nellas-cake-story-container .story-second-section .custom-shape-divider-top-1691930882 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** Separation Image **/
+
+.img-separation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 30vh;
+    margin: 0rem;
+    padding: 0rem;
+    overflow: hidden;
+}
+
+.img-separation {
+    width: 100%;
+    height: 100%;
+}
+
+/** What We Offer **/
+
+.what-we-offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-offer-title {
+    font-weight: bold;
+    text-shadow: 1px 0px 4px rgba(0,0,0,0.5);
+}
+
+.what-we-offer-parragraph {
+    width: 100%;
+}
+
+.what-we-offer-container .what-we-offer-img-container {
+    max-width: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-offer-img {
+    max-width: 25vw;
+    border-radius: 0.4rem;
+}
+
+.what-we-offer-parragraph-container {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .what-we-offer-container .what-we-offer-text-content {
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 767.9px) {
+    .what-we-offer-text-content {
+        text-align: center;
+    }
+    .what-we-offer-parragraph-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.8rem;
+    }
+    .what-we-offer-parragraph {
+        width: 65%;
+    }
+    .what-we-offer-img {
+        max-width: 35vw;
+    }
+}
+
+@media (max-width: 560px) {
+    .what-we-offer-img {
+        max-width: 45vw;
+    }
+}
+
+/**Footer**/
+
+.footer-main {
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    padding-left: 0rem !important; 
+    padding-right: 0rem !important;
+}
+
+.titulo-nellas-cake {
+    margin-bottom: 1.6rem;
+}
+
+.nellas-info-list {
+    list-style-type: none;
+    padding-left: 0rem;
+    font-size: 1.2rem;
+}
+
+.nellas-info-list li {
+    margin-bottom: .7rem;
+}
+
+.footer-main-container .nellas-cake-container {
+    max-width: 40vw;
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
+}
+
+.extra-info {
+    max-width: 40vw;
+    margin-bottom: 0rem;
+    margin-left: 1.8rem;
+    font-size: 1rem;
+}
+
+.extra-info-link {
+    color: white;
+}
+
+@media (min-width:768px) {
+    .extra-info-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .extra-info {
+        margin-top: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .extra-info {
+        margin-top: .7rem;
+    }
+}
+
+.footer-main-container {
+    margin-bottom: 1rem;
+}
+
+.copyright-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: brown;
+    letter-spacing: 0.2rem;
+}

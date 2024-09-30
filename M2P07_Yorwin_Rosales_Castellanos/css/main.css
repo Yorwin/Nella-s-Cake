@@ -1,0 +1,397 @@
+body {
+    box-sizing: border-box;
+}
+
+.masthead {
+    background-image: url(../media/HomePage/MainHeaderIMG.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+.header-title {
+   font-size: 4rem; 
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0,.2)
+}
+
+@media (max-width: 768px) {
+    .masthead {
+        min-height: 70vh;
+    }
+    .header-title {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    .navegacion {
+        background-color: white;
+    }
+    .logo-text {
+        color: black;
+    }
+    .navbar-nav li a {
+        color: black;
+    }
+    .masthead .navbar {
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+    }
+    .nav-item .nav-link:hover {
+        text-decoration: solid black underline 0.1rem;
+    }
+    .nav-item .enlace-red-social {
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .lista-nav {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .masthead .navbar .menu-flex {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .logo-text {
+        display: none;
+    }
+    .navbar-toggler {
+        margin-right: 32%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        background-color: rgba(0, 0, 0,.1);
+    }
+    .logo-text {
+        color: white;
+    }
+    .navbar-nav li a {
+        color: white;
+    }
+    .nav-item .nav-link:hover {
+        color: white;
+        text-decoration: solid white underline 0.1rem;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: white !important; 
+    }
+    
+    .navbar-nav .nav-item .nav-link:focus {
+        color: white;
+    }
+}
+
+.header-logo {
+    max-width: 10vh;
+}
+
+.logo-text {
+    font-weight: bold;
+}
+
+.lista-nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-item .activo {
+    font-weight: bold;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 5% !important; 
+    left: 0;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+@keyframes cambiar-color-seleccion-menu-colapsable {
+    from {color: grey;}
+    to {color:black;}
+}
+
+.dropdown-menu li .dropdown-item {
+    color: grey;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    animation-name: cambiar-color-seleccion-menu-colapsable;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.separacion-menu {
+    color: black;
+}
+
+.enlace-red-social {
+    text-decoration: none;
+    font-style: italic;
+}
+
+/** Estilos 1era Seccion Homepage. **/
+
+.container-fluid .home-page-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.home-page-info .red-velvet-img {
+    border-radius: 15%;
+    max-width: 20vw;
+    filter: drop-shadow(1px 5px 15px #000);
+}
+
+.text-nellas-cake {
+    text-align: center;
+}
+
+.title-nellas-cake {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+}
+
+.parrafo-nellas {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.home-page-info .chocolate-cake-img {
+    border-radius: 15%;
+    max-width: 20vw;
+    filter: drop-shadow(1px 5px 15px #000);
+}
+
+@media (min-width:768px) {
+    .home-page-info .red-velvet-img {
+        margin-right: 3.5rem;
+    }
+    .home-page-info .chocolate-cake-img {
+        margin-left: 3.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .home-page-info .red-velvet-img {
+        max-width: 35vw;
+        margin-bottom: 3.5rem;
+    }
+    .home-page-info .chocolate-cake-img {
+        max-width: 35vw;
+        margin-top: 3.5rem;
+    }
+    .parrafo-nellas {
+        width: 50%;
+    }
+    .imagen-producto-home {
+        width: 30rem;
+     }
+}
+
+/** Haz tu Pedido **/
+
+.haz-tu-pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 10vh;
+    background-color: pink;
+}
+
+.haz-tu-pedido-text {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0rem;
+    text-shadow: 1px 1px 9px rgba(0,0,0,0.82);
+}
+
+/** Seccion de Productos **/
+
+.seccion-de-productos {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container-fluid .contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-productos section img {
+    max-width: 15vw;
+    border-radius: 5%;
+    filter: drop-shadow(1px 5px 15px #000);
+    margin-bottom: 2.5rem;
+}
+
+.contenedor-producto-individual {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.contenedor-producto-individual h1 {
+    margin-bottom: 1.6rem;
+    text-shadow: 2px 0px 4px rgba(0,0,0,0.7);
+} 
+
+.descripcion-producto {
+    max-width: 20vw;
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .descripcion-producto {
+        max-width: 35vw;
+    }
+    .contenedor-productos section img {
+        max-width: 30vw;
+    }
+}
+
+/** Banner **/
+
+.homepage-banner-main-container {
+    width: 100%;
+}
+
+.banner-image-item {
+    width: 100%;
+    height: 25rem;
+    border-top: 0.5rem solid yellow;
+    border-bottom: 0.5rem solid yellow;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .banner-image-item {
+        height: 10rem;
+    }
+}
+
+/** Donde Estamos **/
+
+.donde-estamos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 10vh;
+    background-color: pink;
+}
+
+.donde-estamos-text {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0rem;
+    text-shadow: 1px 1px 9px rgba(0,0,0,0.82);
+}
+
+/** Mapa HomePage **/
+
+.map-home-container {
+    width: 100%;
+    height: 25rem;
+}
+
+.map-home {
+    width: 100%;
+    height: 100%;
+}
+
+/**Footer**/
+
+.footer-main {
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    padding-left: 0rem !important; 
+    padding-right: 0rem !important;
+}
+
+.titulo-nellas-cake {
+    margin-bottom: 1.6rem;
+}
+
+.nellas-info-list {
+    list-style-type: none;
+    padding-left: 0rem;
+    font-size: 1.2rem;
+}
+
+.nellas-info-list li {
+    margin-bottom: .7rem;
+}
+
+.footer-main-container .nellas-cake-container {
+    max-width: 40vw;
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
+}
+
+.extra-info {
+    max-width: 40vw;
+    margin-bottom: 0rem;
+    margin-left: 1.8rem;
+    font-size: 1rem;
+}
+
+.extra-info-link {
+    color: white;
+}
+
+@media (min-width:768px) {
+    .extra-info-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .extra-info {
+        margin-top: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .extra-info {
+        margin-top: .7rem;
+    }
+}
+
+.footer-main-container {
+    margin-bottom: 1rem;
+}
+
+.copyright-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: brown;
+    letter-spacing: 0.2rem;
+}

@@ -1,0 +1,396 @@
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.masthead {
+    background-image: url(../media/HomePage/MainHeaderIMG.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+.contenido-header-navegacion .navegacion {
+    background-color: pink;
+    padding-bottom: 0rem;
+    overflow: hidden;
+}
+
+.navbar-collapse .navbar-nav li a {
+    color: black;
+}
+
+.header-logo-enlace .logo-text {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .masthead {
+        min-height: 70vh;
+    }
+    .header-title {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    .masthead .navbar {
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+    }
+    .nav-item .nav-link:hover {
+        text-decoration: solid black underline 0.1rem;
+    }
+    .nav-item .enlace-red-social {
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .lista-nav {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .contenido-header-navegacion .navbar .menu-flex {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .logo-text {
+        display: none;
+    }
+    .navbar-toggler {
+        margin-right: 32%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        background-color: rgba(0, 0, 0,.1);
+    }
+    .logo-text {
+        color: white;
+    }
+    .navbar-nav li a {
+        color: white;
+    }
+    .nav-item .nav-link:hover {
+        color: white;
+        text-decoration: solid white underline 0.1rem;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: white !important; 
+    }
+    
+    .navbar-nav .nav-item .nav-link:focus {
+        color: white;
+    }
+}
+
+.header-logo {
+    max-width: 10vh;
+}
+
+.logo-text {
+    font-weight: bold;
+}
+
+.lista-nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-item .activo {
+    font-weight: bold;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 5% !important; 
+    left: 0;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+@keyframes cambiar-color-seleccion-menu-colapsable {
+    from {color: grey;}
+    to {color:black;}
+}
+
+.dropdown-menu li .dropdown-item {
+    color: grey;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    animation-name: cambiar-color-seleccion-menu-colapsable;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.separacion-menu {
+    color: black;
+}
+
+.enlace-red-social {
+    text-decoration: none;
+    font-style: italic;
+}
+
+/** Contacto **/
+
+.contedor-principal-contacto {
+    background-image: url(../media/Contactanos/Contactanos.jpg); 
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0,.2);
+}
+
+.titulos-contacto {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.contacto-banner-title {
+    font-size: 6vh;
+    font-weight: 650;
+}
+
+.color-overlay-contacto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.2);
+}
+
+@media (max-width: 768px) {
+    .contedor-principal-contacto {
+        min-height: 60vh;
+    }
+    .contacto-banner-title {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+
+/** Contact Style**/
+
+.contact-form-element {
+    display: block;
+    margin-bottom: 1.3rem;
+}
+
+.contact-form-main-container {
+    overflow: hidden;
+}
+
+.contact-form-container {
+    width: 100%;
+}
+
+.contact-form-opener {
+    width: 70%;
+}
+
+.form-main-info-container {
+    width: 100%;
+}
+
+.form-button-container {
+    width: 27%;
+    height: 2.9rem;
+}
+
+.form-button-container:hover {
+    animation-name: animacion-boton;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.button-contact-form {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-width: 0.13rem;
+    font-weight: 650;
+    letter-spacing: 0.06rem;
+}
+
+.contact-form-element {
+    width: 100%;
+    height: 2.5rem;
+    border-width: 0.13rem;
+}
+
+.message-contact-form {
+    height: 6rem;
+}
+
+.message-contact-form::placeholder {
+    padding-top: 0.5rem;
+}
+
+.contact-form-element::placeholder {
+    padding-left: 0.7rem;
+    font-weight: 600;
+}
+
+@keyframes animacion-boton {
+    from {width: 27%; height: 2.9rem;}
+    to {width: 35%; height: 3.5rem;}
+}
+
+.contact-info-social-media-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0rem;
+}
+
+.contact-info-social-media-link {
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.contact-list {
+    list-style-type: none;
+    font-size: 1.3rem;
+    padding-left: 0rem;
+}
+
+.contact-list-item-link {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-list-item-icon {
+    margin-right: 0.5rem;
+    font-weight: 100;
+}
+
+.contact-list-items {
+    margin-bottom: 0.4rem;
+}
+
+.contact-info-content-title-container {
+    width: 60%;
+}
+
+.schedule-title {
+    font-weight: 650;
+    letter-spacing: 0.1rem;
+}
+
+.data-title-container {
+    font-weight: 650;
+    letter-spacing: 0.1rem;
+}
+
+.schedule-parragraph {
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.contact-list-item-info {
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .contact-info-schedule-container {
+        margin-left: 4rem;
+    }
+    .contact-info-content-container {
+        margin-left: 4rem;
+    }
+}
+
+.map-contact-container {
+    width: 100%;
+    height: 25rem;
+}
+
+.map-contact {
+    width: 100%;
+    height: 100%;
+}
+
+/**Footer**/
+
+.footer-main {
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    padding-left: 0rem !important; 
+    padding-right: 0rem !important;
+}
+
+.titulo-nellas-cake {
+    margin-bottom: 1.6rem;
+}
+
+.nellas-info-list {
+    list-style-type: none;
+    padding-left: 0rem;
+    font-size: 1.2rem;
+}
+
+.nellas-info-list li {
+    margin-bottom: .7rem;
+}
+
+.footer-main-container .nellas-cake-container {
+    max-width: 40vw;
+    margin-top: 1.8rem;
+    margin-left: 1.8rem;
+}
+
+.extra-info {
+    max-width: 40vw;
+    margin-bottom: 0rem;
+    margin-left: 1.8rem;
+    font-size: 1rem;
+    
+}
+
+.extra-info-link {
+    color: white;
+}
+
+@media (min-width:768px) {
+    .extra-info-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .extra-info {
+        margin-top: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .extra-info {
+        margin-top: .7rem;
+    }
+}
+
+.footer-main-container {
+    margin-bottom: 1rem;
+}
+
+.copyright-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: brown;
+    letter-spacing: 0.2rem;
+}
